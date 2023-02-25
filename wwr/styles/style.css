@@ -85,6 +85,7 @@ nav a {
 
 #hero-msg h4 {
     color: white;
+    text-shadow: #4c290f;
 }
 
 #hero-img{
@@ -94,6 +95,7 @@ nav a {
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
     color: white;
+    text-shadow: #4c290f;
 }
 
 .button-box {
@@ -102,6 +104,7 @@ nav a {
 
 .book {
     color: white;
+    text-shadow: #4c290f;
     text-decoration: none;
     font-size: 18px;
     padding: 15px 30px;
