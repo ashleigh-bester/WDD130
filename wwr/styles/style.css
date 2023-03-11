@@ -190,6 +190,84 @@ main section img {
     color:#16728b
 }
 
+.faq-grid {
+    display: grid;
+    grid-template-rows: repeat(9, fr) auto;
+    grid-template-columns: repeat(9, 1fr) auto;
+}
+
+.faq-msg1 {
+    color:#4c290f;
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 1/8;
+    grid-row: 2/3;
+    background-color: aliceblue;
+    margin: 30px;
+}
+
+.faq-msg2 {
+    color:#4c290f;
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 1/8;
+    grid-row: 5/6;
+    background-color: aliceblue;
+    margin: 30px;
+}
+
+.faq-msg3 {
+    color:#4c290f;
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 1/8;
+    grid-row: 8/9;
+    background-color: aliceblue;
+    margin: 30px;
+}
+
+.faq-msg1 p .faq-msg2 p .faq-msg3{
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+.faq-msg1 h4 .faq-msg2 h4 .faq-msg3 h4 {
+    font-family: 'Inconsolata', sans-serif, Helvetica;
+    color:#16728b
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+.faq-img {
+    border: 3px solid #4c290f;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.faq-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+.rafting-card {
+    grid-column: 8/9;
+    grid-row: 2/3;
+    padding: 30px;
+}
+
+.kids-card {
+    grid-column: 8/9;
+    grid-row: 5/6;
+    padding: 30px;
+}
+
+.equipment-card {
+    grid-column: 8/9;
+    grid-row: 8/9;
+    padding: 30px;
+}
+
 .join {
     color: rgba(127, 18, 15, 0.825);
     text-decoration: none;
@@ -227,10 +305,8 @@ footer p a:hover {
 footer .social img { padding-top: 15px;
 }
 
-
-
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero, .home-grid, .faq-grid {
         display: block;
         height: auto;
     }
@@ -250,18 +326,18 @@ footer .social img { padding-top: 15px;
     #hero-msg h4 {
         display: none;
     }
-    .home-title {
+    .home-title, .faq-title {
         font-size: 25px;
         color: #6f7364;
     }
-    .rivers-card, .camping-card, .rapids-card { 
+    .rivers-card, .camping-card, .rapids-card, .rafting-card, .kids-card, .equipment-card { 
         margin: 50px auto;
         width: 60%;
     }
     #background {
         display: none;
     }
-    .mountains, .msg {
+    .mountains, .msg, .faq-msg1, .faq-msg2, .faq-msg3{
         width: 80%;
         display: block;
         margin: 0 auto;
