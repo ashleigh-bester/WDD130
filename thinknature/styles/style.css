@@ -2,7 +2,7 @@
 
 body {
     background-color: white;
-    margin: 0;
+    margin: 5px;
     padding: 0;
 }
 
@@ -12,7 +12,7 @@ nav {
     justify-content: space-around;
     height: 250px;
     padding: 0;
-    margin: 5px;
+    margin-bottom: 5px;
     font-family: "Amatic SC", Helvetica, sans-serif;
     font-size: xx-large;
 }
@@ -93,6 +93,21 @@ nav a {
     color: #C69718;
 }
 
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr)
+}
+
+main section {
+    text-align: center;
+}
+
+.intro-p {
+    padding: 15px;
+    margin-bottom: 25px;
+    grid-column: 1/12;
+}
+
 p {
     font-family: "Shadows Into Light", Helvetica, sans-serif;
     font-size: larger;
@@ -100,10 +115,29 @@ p {
     color: #193926;
 }
 
+.hl-img {
+    width: 500px;
+    margin-left: 50px;
+    grid-column: 1/6;
+    grid-row: 2/11;
+    z-index: -1;
+}
+
+.highlight-msg {
+    padding: 10px;
+    margin-right: 50px;
+    grid-column: 5/12;
+    grid-row: 4/9;
+    background: rgb(253, 204, 212);
+}
+
+.end-p {
+    padding: 15px;
+    margin-top: 25px;
+    grid-column: 1/12;
+}
+
 .social img {
     width: 100px;
 }
 
-.hl-img {
-    width: 500px;
-}
