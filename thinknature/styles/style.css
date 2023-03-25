@@ -1,9 +1,103 @@
-#hero-img {
-    width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Shadows+Into+Light&display=swap');
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #e4fdec;
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+    padding: 0;
+    margin: 5px;
+    font-family: "Amatic SC", Helvetica, sans-serif;
+    font-size: xx-large;
 }
 
 .logo {
     width: 200px;
+    padding: 0;
+}
+
+nav a:hover{
+    background-color: white;
+    color: #C69718;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 200;
+}
+
+nav a {
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    color: #193926;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 200;
+    color:#193926;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: 0;
+}
+
+#hero-box {
+    grid-column: 1/6;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+#hero-msg {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    margin-top: 15px;
+    margin-left: -180px;
+}
+
+#hero-msg h2, #hero-msg h3 {
+    text-align: center;
+    color: white;
+    text-shadow: #4c290f;
+    background-color: #193926;
+    padding: 10px;
+    margin: 0px;
+    width: 500px;
+}
+
+.button-box, .tn_app_link {
+    text-align: center;
+    color: white;
+    background-color: #193926;
+    padding: 10px;
+    margin: 0px;
+    width: 500px;
+}
+
+.tn_app_link:hover {
+    background-color: white;
+    color: #C69718;
+}
+
+p {
+    font-family: "Shadows Into Light", Helvetica, sans-serif;
+    font-size: larger;
+    padding: 0;
+    color: #193926;
 }
 
 .social img {
