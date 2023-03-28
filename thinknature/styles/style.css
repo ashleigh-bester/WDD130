@@ -106,9 +106,6 @@ main section {
     padding: 15px;
     margin-bottom: 25px;
     grid-column: 1/12;
-}
-
-p {
     font-family: "Shadows Into Light", Helvetica, sans-serif;
     font-size: larger;
     padding: 0;
@@ -129,15 +126,81 @@ p {
     grid-column: 5/12;
     grid-row: 4/9;
     background: rgb(253, 204, 212);
+    font-family: "Shadows Into Light", Helvetica, sans-serif;
+    font-size: larger;
+    padding: 0;
+    color: #193926;
 }
 
 .end-p {
     padding: 15px;
     margin-top: 25px;
+    margin-bottom: 50px;
     grid-column: 1/12;
+    font-family: "Shadows Into Light", Helvetica, sans-serif;
+    font-size: larger;
+    padding: 0;
+    color: #193926;
+}
+
+footer {
+    background-color: #e4fdec;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.copy, .site-plan {
+    grid-column: 1/2;
+    margin-left: 50px;
+    text-decoration: none;
+    font-family: "Amatic SC", Helvetica, sans-serif;
+    font-size: x-large;
+}
+
+.copy {
+    grid-row: 1;
+    color: #C69718;
+}
+
+.site-plan {
+    grid-row: 2;
+}
+
+h4 {
+    grid-column: 3/4;
+    grid-row: 1;
+    font-size: large;
 }
 
 .social img {
     width: 100px;
+    margin-right: -35px;
 }
 
+.social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 2/4;
+    grid-row: 2;
+    padding: 10px;
+}
+
+.social a {
+    text-decoration: none;
+    font-family: "Amatic SC", Helvetica, sans-serif;
+    font-size: x-large;
+}
+
+.social p {
+    background-color: #193926;
+    color: white;
+    padding: 10px;
+}
+
+.social p:hover {
+    padding: 10px;
+    background-color: white;
+    color: #C69718;
+}
