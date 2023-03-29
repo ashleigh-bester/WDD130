@@ -185,6 +185,60 @@ main section {
     color: #C69718;
 }
 
+.hl-img-k {
+    width: 400px;
+    margin-left: 25px;
+    margin-top: 43px;
+    grid-column: 1/2;
+    grid-row: 2/11;
+    z-index: -1;
+}
+
+.hl-img-k-two {
+    width: 400px;
+    margin-right: 25px;
+    margin-top: 43px;
+    grid-column: 11/12;
+    grid-row: 2/11;
+    z-index: -1;
+}
+
+.highlight-msg-k {
+    padding: 0;
+    margin: 0;
+    grid-column: 2/11;
+    grid-row: 4/6;
+    background: rgb(253, 204, 212);
+    font-family: "Shadows Into Light", Helvetica, sans-serif;
+    font-size: larger;
+    padding: 0;
+    color: #193926;
+}
+
+.highlight-msg-k a {
+    padding: 0;
+    text-decoration: none;
+}
+
+.faqs {
+    font-family: "Shadows Into Light", Helvetica, sans-serif;
+    font-size: larger;
+    color: #193926;
+    padding: 5px;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    grid-column: 1/12;
+    grid-row: 10/11;
+    text-align: center;
+    background-color: aliceblue;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.faqs h2, h3 {
+    font-family: "Amatic SC", Helvetica, sans-serif;
+}
+
 footer {
     background-color: #e4fdec;
     display: grid;
