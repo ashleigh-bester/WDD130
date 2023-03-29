@@ -132,6 +132,27 @@ main section {
     color: #193926;
 }
 
+.hl-img-eco {
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 100px;
+    grid-column: 1/5;
+    grid-row: 2/11;
+    z-index: -1;
+}
+
+.highlight-msg-eco {
+    grid-column: 5/12;
+    grid-row: 2/3;
+    padding: 0;
+    margin-right: 50px;
+    background: rgb(253, 204, 212);
+    font-family: "Shadows Into Light", Helvetica, sans-serif;
+    font-size: larger;
+    padding: 50px;
+    color: #193926;
+}
+
 .end-p {
     padding: 15px;
     margin-top: 25px;
@@ -141,6 +162,27 @@ main section {
     font-size: larger;
     padding: 0;
     color: #193926;
+}
+
+#get-started {
+    font-family: "Amatic SC", Helvetica, sans-serif;
+    font-size: x-large;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    padding-left: 10px;
+    margin-left: 100px;
+    margin-right: 375px;
+    color: #193926;
+    background-color: rgb(240, 255, 242);
+    grid-column: 3/12;
+    grid-row: 3/11;
+    text-align: left;
+}
+
+#get-started h2 {
+    color: #C69718;
 }
 
 footer {
