@@ -188,7 +188,7 @@ main section {
 .hl-img-k {
     width: 400px;
     margin-left: 25px;
-    margin-top: 43px;
+    margin-top: 50px;
     grid-column: 1/2;
     grid-row: 2/11;
     z-index: -1;
@@ -197,22 +197,108 @@ main section {
 .hl-img-k-two {
     width: 400px;
     margin-right: 25px;
-    margin-top: 43px;
+    margin-top: 50px;
     grid-column: 11/12;
     grid-row: 2/11;
     z-index: -1;
 }
 
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  grid-column: 1/2;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container-two {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  grid-column: 11/12;
+  margin-right: 125px;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay-two{
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container-two:hover .overlay-two {
+  opacity: 1;
+}
+
 .highlight-msg-k {
     padding: 0;
-    margin: 0;
-    grid-column: 2/11;
+    margin: 20px;
+    margin-top: -330px;
+    margin-bottom: 25px;
+    margin-left: 50px;
+    margin-right: 0;
+    grid-column: 3/11;
     grid-row: 4/6;
     background: rgb(253, 204, 212);
     font-family: "Shadows Into Light", Helvetica, sans-serif;
     font-size: larger;
     padding: 0;
     color: #193926;
+    z-index: 1;
 }
 
 .highlight-msg-k a {
