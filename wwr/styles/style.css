@@ -310,7 +310,9 @@ footer .social img { padding-top: 15px;
         display: block;
         height: auto;
     }
-  
+    nav, footer {
+        flex-direction: column;
+    }
     nav a {
         display: block;
         padding: 15px;
